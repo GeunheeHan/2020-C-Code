@@ -5,7 +5,7 @@ int main(int argc, char *argv[])
 {
 	int i = 0;
 
-	printf("½ÇÇà ¸í·ÉÇà ÀÎÀÚ(command line arguments) >>\n");
+	printf("ì‹¤í–‰ ëª…ë ¹í–‰ ì¸ìž(command line arguments) >>\n");
 	printf("argc = %d\n", argc);
 	for (i = 0; i < argc; i++)
 		printf("argv[%d] = %s\n", i, argv[i]);
