@@ -1,4 +1,3 @@
-// file: strcomp.c
 #include <stdio.h>
 #include <string.h>
 
@@ -7,17 +6,17 @@ int main(void)
 	char src[50] = "https://www.visualstudio.com";
 	char dst[50];
 
-	printf("¹®ÀÚ¹è¿­ src = %s\n", src);
-	printf("¹®ÀÚ¿­Å©±â strlen(src) = %d\n", strlen(src));
+	printf("ë¬¸ìë°°ì—´ src = %s\n", src);
+	printf("ë¬¸ìì—´í¬ê¸° strlen(src) = %d\n", strlen(src));
 	memcpy(dst, src, strlen(src)+1);
-	printf("¹®ÀÚ¹è¿­ dst = %s\n", dst);
-	memcpy(src, "¾È³çÇÏ¼¼¿ä!", strlen("¾È³çÇÏ¼¼¿ä!")+1);
-	printf("¹®ÀÚ¹è¿­ src = %s\n", src);
+	printf("ë¬¸ìë°°ì—´ dst = %s\n", dst);
+	memcpy(src, "ì•ˆë…•í•˜ì„¸ìš”!", strlen("ì•ˆë…•í•˜ì„¸ìš”!")+1);
+	printf("ë¬¸ìë°°ì—´ src = %s\n", src);
 
 	char ch = ':';
 	char *ret;
 	ret = memchr(dst, ch, strlen(dst));
-	printf("¹®ÀÚ %c µÚ¿¡´Â ¹®ÀÚ¿­ %s  ÀÌ ÀÖ´Ù.\n", ch, ret);
+	printf("ë¬¸ì %c ë’¤ì—ëŠ” ë¬¸ìì—´ %s  ì´ ìˆë‹¤.\n", ch, ret);
 
 	return 0;
 }
