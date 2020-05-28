@@ -1,4 +1,3 @@
-// file: strcomp.c
 #include <stdio.h>
 #include <string.h>
 
