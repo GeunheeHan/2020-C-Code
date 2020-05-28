@@ -4,9 +4,9 @@
 
 int main(void)
 {
-	char line[101]; //char *line À¸·Î´Â ¿À·ù¹ß»ı
+	char line[101];
 
-	printf("ÀÔ·ÂÀ» Á¾·áÇÏ·Á¸é »õ·Î¿î Çà¿¡¼­ (ctrl + Z)¸¦ ´©¸£½Ê½Ã¿ä.\n");
+	printf("ì…ë ¥ì„ ì¢…ë£Œí•˜ë ¤ë©´ ìƒˆë¡œìš´ í–‰ì—ì„œ (ctrl + Z)ë¥¼ ëˆ„ë¥´ì‹­ì‹œìš”.\n");
 	while (gets(line))
 		puts(line);
 	printf("\n");
