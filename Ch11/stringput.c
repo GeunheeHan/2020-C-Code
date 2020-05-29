@@ -1,16 +1,15 @@
-// file: stringput.c
 #define _CRT_SECURE_NO_WARNINGS   
 #include <stdio.h> 
 
 int main(void)
 {
-	char name[20], dept[30]; //char *name, *dept; ½ÇÇà ¿À·ù ¹ß»ý
+	char name[20], dept[30];
 
-	printf("%s", "ÇÐ°ú ÀÔ·Â >> ");
+	printf("%s", "í•™ê³¼ ìž…ë ¥ >> ");
 	scanf("%s", dept);
-	printf("%s", "ÀÌ¸§ ÀÔ·Â >> ");
+	printf("%s", "ì´ë¦„ ìž…ë ¥ >> ");
 	scanf("%s", name);
-	printf("Ãâ·Â: %10s %10s\n", dept, name);
+	printf("ì¶œë ¥: %10s %10s\n", dept, name);
 
 	return 0;
 }
