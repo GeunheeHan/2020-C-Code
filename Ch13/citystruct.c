@@ -1,35 +1,32 @@
-// file: structcity.c
 #include <stdio.h>
 #include <string.h>
 
-//Áö±¸ À§Ä¡ ±¸Á¶Ã¼ 
 struct position
 {
-	double latitude;	//À§µµ
-	double longitude;	//°æµµ
+	double latitude;
+	double longitude;
 };
 
 int main(void)
 {
-	//µµ½Ã Á¤º¸ ±¸Á¶Ã¼ 
 	struct city
 	{
-		char *name;				//ÀÌ¸§
-		struct position place;	//À§Ä¡
+		char *name;
+		struct position place;
 	};
 	struct city seoul, newyork;
 
-	seoul.name = "¼­¿ï";
+	seoul.name = "ì„œìš¸";
 	seoul.place.latitude = 37.33;
 	seoul.place.longitude = 126.58;
 
-	newyork.name = "´º¿å";
+	newyork.name = "ë‰´ìš•";
 	newyork.place.latitude = 40.8;
 	newyork.place.longitude = 73.9;
 
-	printf("[%s] À§µµ= %.1f °æµµ= %.1f\n",
+	printf("[%s] ìœ„ë„= %.1f ê²½ë„= %.1f\n",
 		seoul.name, seoul.place.latitude, seoul.place.longitude);
-	printf("[%s] À§µµ= %.1f °æµµ= %.1f\n",
+	printf("[%s] ìœ„ë„= %.1f ê²½ë„= %.1f\n",
 		newyork.name, newyork.place.latitude, newyork.place.longitude);
 
 	return 0;
