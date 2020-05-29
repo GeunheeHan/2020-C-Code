@@ -30,7 +30,7 @@ int main(void)
 	one = bae;
 	if (one.snum == bae.snum)
 		printf("학번이 %d로 동일합니다.\n", one.snum);
-	//if ( one == bae ) //오류
+	
 	if (one.snum == bae.snum && !strcmp(one.name, bae.name) && !strcmp(one.dept, bae.dept))
 		printf("내용이 같은 구조체입니다.\n");
 
