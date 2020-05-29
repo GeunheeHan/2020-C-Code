@@ -1,22 +1,18 @@
-// file: registervar.c
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h> 
 
 int main(void)
 {
-	//·¹Áö½ºÅÍ Áö¿ªº¯¼ö ¼±¾ð
 	register int sum = 0;
 
-	//¸Þ¸ð¸®¿¡ ÀúÀåµÇ´Â ÀÏ¹Ý Áö¿ªº¯¼ö ¼±¾ð
 	int max;
-	printf("¾çÀÇ Á¤¼ö ÀÔ·Â >> ");
+	printf("ì–‘ì˜ ì •ìˆ˜ ìž…ë ¥ >> ");
 	scanf("%d", &max);
 
-	//·¹Áö½ºÅÍ ºí·Ï Áö¿ªº¯¼ö ¼±¾ð
 	for (register int count = 1; count <= max; count++)
 		sum += count;
 
-	printf("ÇÕ: %d\n", sum);
+	printf("í•©: %d\n", sum);
 
 	return 0;
 }
