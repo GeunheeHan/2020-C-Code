@@ -1,30 +1,25 @@
-// file: globalvar.c
 #include <stdio.h>
 
 double getArea(double);
 double getCircum(double);
 
-//Àü¿ªº¯¼ö ¼±¾ğ
 double PI = 3.14;
 int gi;
 
 int main(void)
 {
-	//Áö¿ªº¯¼ö ¼±¾ğ
 	double r = 5.87;
-	//Àü¿ªº¯¼ö PI¿Í °°Àº ÀÌ¸§ÀÇ Áö¿ªº¯¼ö ¼±¾ğ
 	const double PI = 3.141592;
 
-	printf("¸éÀû: %.2f\n", getArea(r));
-	printf("µÑ·¹1: %.2f\n", 2 * PI*r);
-	printf("µÑ·¹2: %.2f\n", getCircum(r));
-	printf("PI: %f\n", PI);	//Áö¿ªº¯¼ö PI ÂüÁ¶
-	printf("gi: %d\n", gi);	//Àü¿ªº¯¼ö gi ±âº» °ª
-
+	printf("ë©´ì : %.2f\n", getArea(r));
+	printf("ë‘˜ë ˆ1: %.2f\n", 2 * PI*r);
+	printf("ë‘˜ë ˆ2: %.2f\n", getCircum(r));
+	printf("PI: %f\n", PI);
+	printf("gi: %d\n", gi);
 	return 0;
 }
 
 double getArea(double r)
 {
-	return r*r*PI;		//Àü¿ªº¯¼ö PI ÂüÁ¶
+	return r*r*PI;
 }
