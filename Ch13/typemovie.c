@@ -1,21 +1,19 @@
-// file: typemovie.c
 #include <stdio.h>
 
 int main(void)
 {
-	//¿µÈ­ Á¤º¸ ±¸Á¶Ã¼ 
 	typedef struct movie 
 	{
-		char *title;	//¿µÈ­Á¦¸ñ
-		int attendance;	//°ü°´¼ö
+		char *title;
+		int attendance;
 	} movie;
 
 	movie assassination;
 
-	assassination.title = "¾Ï»ì";
+	assassination.title = "ì•”ì‚´";
 	assassination.attendance = 12700000;
 
-	printf("[%s] °ü°´¼ö: %d\n", assassination.title, assassination.attendance);
+	printf("[%s] ê´€ê°ìˆ˜: %d\n", assassination.title, assassination.attendance);
 
 	return 0;
 }
