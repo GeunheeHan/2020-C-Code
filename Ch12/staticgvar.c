@@ -1,28 +1,21 @@
-// file: staticgvar.c
 #include <stdio.h> 
 
-//Á¤Àû Àü¿ªº¯¼ö ¼±¾ğ
 static int svar;
-//Àü¿ªº¯¼ö ¼±¾ğ
 int gvar;
 
-//ÇÔ¼ö ¿øÇü
 void increment();
 void testglobal();
-//void teststatic();
 
 int main(void)
 {
 	for (int count = 1; count <= 5; count++)
 		increment();
-	printf("ÇÔ¼ö increment()°¡ ÃÑ %d¹ø È£ÃâµÇ¾ú½À´Ï´Ù.\n", svar);
+	printf("í•¨ìˆ˜ increment()ê°€ ì´ %dë²ˆ í˜¸ì¶œë˜ì—ˆìŠµë‹ˆë‹¤.\n", svar);
 
 	testglobal();
-	printf("Àü¿ª º¯¼ö: %d\n", gvar);
-	//teststatic();
+	printf("ì „ì—­ ë³€ìˆ˜: %d\n", gvar);
 }
 
-//ÇÔ¼ö ±¸Çö
 void increment()
 {
 	svar++;
