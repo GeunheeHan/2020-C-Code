@@ -14,7 +14,6 @@ int main(void)
 	{
 		printf("%s\n", ptoken);
 		ptoken = strtok(NULL, delimiter);
-		//ptoken = strtok_s(NULL, delimiter, &next_token);
 	}
 
 	return 0;
