@@ -1,4 +1,3 @@
-// file: getche.c
 #include <stdio.h> 
 #include <conio.h> 
 
@@ -6,15 +5,15 @@ int main(void)
 {
 	char ch;
 
-	printf("¹®ÀÚ¸¦ °è¼Ó ÀÔ·ÂÇÏ°í Enter¸¦ ´©¸£¸é >>\n");
+	printf("ë¬¸ìžë¥¼ ê³„ì† ìž…ë ¥í•˜ê³  Enterë¥¼ ëˆ„ë¥´ë©´ >>\n");
 	while ((ch = getchar()) != 'q')
 		putchar(ch);
 
-	printf("\n¹®ÀÚ¸¦ ´©¸¦ ¶§¸¶´Ù µÎ ¹ø Ãâ·Â >>\n");
+	printf("\në¬¸ìžë¥¼ ëˆ„ë¥¼ ë•Œë§ˆë‹¤ ë‘ ë²ˆ ì¶œë ¥ >>\n");
 	while ((ch = _getche()) != 'q')
 		putchar(ch);
 
-	printf("\n¹®ÀÚ¸¦ ´©¸£¸é ÇÑ ¹ø Ãâ·Â >>\n");
+	printf("\në¬¸ìžë¥¼ ëˆ„ë¥´ë©´ í•œ ë²ˆ ì¶œë ¥ >>\n");
 	while ((ch = _getch()) != 'q')
 		_putch(ch);
 	printf("\n");
