@@ -1,30 +1,28 @@
-// file: structarray.c
 #include <stdio.h>
 
 struct lecture
 {
-	char name[20];	//°­ÁÂ¸í
-	int type;		//°­ÁÂ±¸ºĞ
-	int credit;		//ÇĞÁ¡
-	int hours;		//½Ã¼ö
+	char name[20];
+	int type;
+	int credit;
+	int hours;
 };
 typedef struct lecture lecture;
 
-char *lectype[] = { "±³¾ç", "ÀÏ¹İ¼±ÅÃ", "Àü°øÇÊ¼ö", "Àü°ø¼±ÅÃ" };
-char *head[] = { "°­ÁÂ¸í", "°­ÁÂ±¸ºĞ", "ÇĞÁ¡", "½Ã¼ö" };
+char *lectype[] = { "êµì–‘", "ì¼ë°˜ì„ íƒ", "ì „ê³µí•„ìˆ˜", "ì „ê³µì„ íƒ" };
+char *head[] = { "ê°•ì¢Œëª…", "ê°•ì¢Œêµ¬ë¶„", "í•™ì ", "ì‹œìˆ˜" };
 
 int main(void)
-{
-	//±¸Á¶Ã¼ lectureÀÇ ¹è¿­ ¼±¾ğ ¹× ÃÊ±âÈ­ 
-	lecture course[] = { { "ÀÎ°£°ú »çÈ¸", 0, 2, 2 },
-	{ "°æÁ¦ÇĞ°³·Ğ", 1, 3, 3 },
-	{ "ÀÚ·á±¸Á¶", 2, 3, 3 },
-	{ "¸ğ¹ÙÀÏÇÁ·Î±×·¡¹Ö", 2, 3, 4 },
-	{ "°í±Ş CÇÁ·Î±×·¡¹Ö", 3, 3, 4 } };
+{ 
+	lecture course[] = { { "ì¸ê°„ê³¼ ì‚¬íšŒ", 0, 2, 2 },
+	{ "ê²½ì œí•™ê°œë¡ ", 1, 3, 3 },
+	{ "ìë£Œêµ¬ì¡°", 2, 3, 3 },
+	{ "ëª¨ë°”ì¼í”„ë¡œê·¸ë˜ë°", 2, 3, 4 },
+	{ "ê³ ê¸‰ Cí”„ë¡œê·¸ë˜ë°", 3, 3, 4 } };
 
 	int arysize = sizeof(course) / sizeof(course[0]);
 
-	printf("¹è¿­Å©±â: %d\n\n", arysize);
+	printf("ë°°ì—´í¬ê¸°: %d\n\n", arysize);
 	printf("%12s   %12s %6s %6s\n", head[0], head[1], head[2], head[3]);
 	printf("==============================================\n");
 
