@@ -1,27 +1,24 @@
-// file: structmovie.c
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <string.h>
 
 int main(void)
 {
-	//¿µÈ­ Á¤º¸ ±¸Á¶Ã¼ 
 	typedef struct movie
 	{
-		char *title;		//¿µÈ­Á¦¸ñ
-		int attendance;		//°ü°´¼ö
-		char director[20];	//°¨µ¶
+		char *title;
+		int attendance;
+		char director[20];
 	} movie;
 
 	movie box[] = {
-	{ "¸í·®", 17613000, "±èÇÑ¹Î" },
-	{ "±¹Á¦½ÃÀå", 14257000, "À±Á¦±Õ" },
-	{ "º£Å×¶û", 13383000} };
+	{ "ëª…ëŸ‰", 17613000, "ê¹€í•œë¯¼" },
+	{ "êµ­ì œì‹œì¥", 14257000, "ìœ¤ì œê· " },
+	{ "ë² í…Œë‘", 13383000} };
 
-	//¿µÈ­ º£Å×¶ûÀÇ °¨µ¶À» ·ù½Â¿ÏÀ¸·Î ÀúÀå
-	strcpy(box[2].director, "·ù½Â¿Ï");
+	strcpy(box[2].director, "ë¥˜ìŠ¹ì™„");
 
-	printf("   Á¦¸ñ     °¨µ¶   °ü°´¼ö\n");
+	printf("   ì œëª©     ê°ë…   ê´€ê°ìˆ˜\n");
 	printf("===========================\n");
 	for (int i = 0; i < 3; i++)
 		printf("[%8s] %6s %d\n",
