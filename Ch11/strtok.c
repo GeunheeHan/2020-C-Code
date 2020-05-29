@@ -10,7 +10,7 @@ int main(void)
 	printf("문자열 \"%s\"을 >>\n", str1);
 	printf("구분자[%s]를 이용하여 토큰을 추출 >>\n", delimiter);
 	char *ptoken = strtok(str1, delimiter);
-	while (ptoken) //(ptoken != NULL)
+	while (ptoken)
 	{
 		printf("%s\n", ptoken);
 		ptoken = strtok(NULL, delimiter);
