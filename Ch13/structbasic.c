@@ -1,29 +1,24 @@
-// file: structbasic.c
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <string.h>
 
-//ÀºÇà °èÁÂ¸¦ À§ÇÑ ±¸Á¶Ã¼ Á¤ÀÇ
 struct account
 {
-	char name[12];	//°èÁÂÁÖ ÀÌ¸§
-	int actnum;		//°èÁÂ¹øÈ£
-	double balance;	//ÀÜ°í
+	char name[12];
+	int actnum;
+	double balance;
 };
 
 int main(void)
 {
-	//±¸Á¶Ã¼ º¯¼ö ¼±¾ğ ¹× ÃÊ±âÈ­
-	struct account mine = { "È«±æµ¿", 1001, 300000 };
+	struct account mine = { "í™ê¸¸ë™", 1001, 300000 };
 	struct account yours;
 
-	strcpy(yours.name, "ÀÌµ¿¿ø");
-	//strcpy_s(yours.name, 12, "ÀÌµ¿¿ø"); //°¡´É
-	//yours.name = "ÀÌµ¿¿ø"; //¿À·ù
+	strcpy(yours.name, "ì´ë™ì›");
 	yours.actnum = 1002;
 	yours.balance = 500000;
 
-	printf("±¸Á¶Ã¼Å©±â: %d\n", sizeof(mine));
+	printf("êµ¬ì¡°ì²´í¬ê¸°: %d\n", sizeof(mine));
 	printf("%s %d %.2f\n", mine.name, mine.actnum, mine.balance);
 	printf("%s %d %.2f\n", yours.name, yours.actnum, yours.balance);
 
