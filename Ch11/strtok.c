@@ -1,4 +1,3 @@
-// file: strtok.c 
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <string.h>
@@ -7,17 +6,15 @@ int main(void)
 {
 	char str1[] = "C and C++\t language are best!";
 	char *delimiter = " ,\t!";
-	//char *next_token;
 
-	printf("πÆ¿⁄ø≠ \"%s\"¿ª >>\n", str1);
-	printf("±∏∫–¿⁄[%s]∏¶ ¿ÃøÎ«œø© ≈‰≈´¿ª √ﬂ√‚ >>\n", delimiter);
+	printf("Î¨∏ÏûêÏó¥ \"%s\"ÏùÑ >>\n", str1);
+	printf("Íµ¨Î∂ÑÏûê[%s]Î•º Ïù¥Ïö©ÌïòÏó¨ ÌÜ†ÌÅ∞ÏùÑ Ï∂îÏ∂ú >>\n", delimiter);
 	char *ptoken = strtok(str1, delimiter);
-	//ptoken = strtok_s(str, delimiter, &next_token);
 	while (ptoken) //(ptoken != NULL)
 	{
 		printf("%s\n", ptoken);
-		ptoken = strtok(NULL, delimiter); //¥Ÿ¿Ω ≈‰≈´¿ª π›»Ø
-		//ptoken = strtok_s(NULL, delimiter, &next_token); //¥Ÿ¿Ω ≈‰≈´¿ª π›»Ø
+		ptoken = strtok(NULL, delimiter);
+		//ptoken = strtok_s(NULL, delimiter, &next_token);
 	}
 
 	return 0;
