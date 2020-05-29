@@ -1,4 +1,3 @@
-// file: strprocess.c
 #include <stdio.h>
 
 int main(void)
@@ -9,12 +8,10 @@ int main(void)
 
 	char *pstr[] = { str1, str2, str3 };
 
-	//각각의 3개 문자열 출력
 	printf("%s ", pstr[0]);
 	printf("%s ", pstr[1]);
 	printf("%s\n", pstr[2]);
 
-	//문자 출력
 	printf("%c %c %c\n", str1[0], str2[1], str3[2]);
 	printf("%c %c %c\n", pstr[0][1], pstr[1][1], pstr[2][1]);
 
