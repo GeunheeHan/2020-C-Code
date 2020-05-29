@@ -1,19 +1,14 @@
-//file fibonacci.c
 #define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
 
-//Àü¿ªº¯¼ö
 int count;
-//ÇÔ¼ö¿øÇü
 void fibonacci(int prev_number, int number);
 
 int main(void) 
 {
-	//ÀÚµ¿ Áö¿ªº¯¼ö
 	auto prev_number = 0, number = 1;
 
-	printf("ÇÇº¸³ªÃ÷¸¦ ¸î °³ ±¸ÇÒ±î¿ä?(3 ÀÌ»ó) >> ");
-	//Àü¿ªº¯¼ö¸¦ Ç¥ÁØÀÔ·ÂÀ¸·Î ÀúÀå
+	printf("í”¼ë³´ë‚˜ì¸ ë¥¼ ëª‡ ê°œ êµ¬í• ê¹Œìš”?(3 ì´ìƒ) >> ");
 	scanf("%d", &count);
 	if (count <= 2)
 		return 0;
@@ -25,13 +20,10 @@ int main(void)
 
 void fibonacci(int prev_number, int number)
 {
-	//Á¤Àû Áö¿ªº¯¼ö i
 	static int i = 1;
 
-	//Àü¿ªº¯¼ö count¿Í ÇÔ¼öÀÇ Á¤Àû Áö¿ªº¯¼ö¸¦ ºñ±³
 	while (i++ < count)
 	{ 
-		//Áö¿ªº¯¼ö 
 		int next_num = prev_number + number;
 		prev_number = number;
 		number = next_num;
