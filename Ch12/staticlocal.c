@@ -1,20 +1,18 @@
-// file: staticlocal.c
 #include <stdio.h> 
 
-void increment(void); //ÇÔ¼ö¿øÇü
+void increment(void);
 
 int main(void)
 {
-	//ÀÚµ¿ Áö¿ªº¯¼ö
 	for (int count = 0; count < 3; count++)
-		increment();	//3¹ø ÇÔ¼öÈ£Ãâ
+		increment();
 }
 
 void increment(void)
 {
-	static int sindex = 1;	//Á¤Àû Áö¿ªº¯¼ö
-	auto int aindex = 1;	//ÀÚµ¿ Áö¿ªº¯¼ö
+	static int sindex = 1;
+	auto int aindex = 1;
 
-	printf("Á¤Àû Áö¿ªº¯¼ö sindex: %2d,\t", sindex++);
-	printf("ÀÚµ¿ Áö¿ªº¯¼ö aindex: %2d\n", aindex++);
+	printf("ì •ì  ì§€ì—­ë³€ìˆ˜ sindex: %2d,\t", sindex++);
+	printf("ìë™ ì§€ì—­ë³€ìˆ˜ aindex: %2d\n", aindex++);
 }
