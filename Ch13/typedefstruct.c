@@ -1,33 +1,30 @@
-// file: typedefstruct.c 
 #include <stdio.h>
 
 struct date
 {
-	int year;	//³â
-	int month;	//¿ù
-	int day;	//ÀÏ
+	int year;
+	int month;
+	int day;
 };
 
-//struct date À¯ÇüÀ» °£´ÜÈ÷ date ÇüÀ¸·Î »ç¿ëÇÏ±â À§ÇÑ ±¸¹®  
 typedef struct date date;
 
 int main(void)
 {
-	//±¸Á¶Ã¼¸¦ Á¤ÀÇÇÏ¸é¼­ ¹Ù·Î ÀÚ·áÇü software ·Î Á¤ÀÇÇÏ±â À§ÇÑ ±¸¹®  
 	typedef struct
 	{
-		char title[30];	 //Á¦¸ñ
-		char company[30];//Á¦ÀÛÈ¸»ç
-		char kinds[30];	 //Á¾·ù
-		date release;	 //Ãâ½ÃÀÏ
+		char title[30];
+		char company[30];
+		char kinds[30];
+		date release;
 	} software;
 
-	software vs = { "ºñÁÖ¾ó½ºÆ©µğ¿À Ä¿¹Â´ÏÆ¼", "MS", "ÅëÇÕ°³¹ßÈ¯°æ", { 2018, 8, 29 } };
+	software vs = { "ë¹„ì£¼ì–¼ìŠ¤íŠœë””ì˜¤ ì»¤ë®¤ë‹ˆí‹°", "MS", "í†µí•©ê°œë°œí™˜ê²½", { 2018, 8, 29 } };
 
-	printf("Á¦Ç°¸í: %s\n", vs.title);
-	printf("È¸»ç : %s\n", vs.company);
-	printf("Á¾·ù : %s\n", vs.kinds);
-	printf("Ãâ½ÃÀÏ: %d. %d. %d\n", vs.release.year, vs.release.month, vs.release.day);
+	printf("ì œí’ˆëª…: %s\n", vs.title);
+	printf("íšŒì‚¬ : %s\n", vs.company);
+	printf("ì¢…ë¥˜ : %s\n", vs.kinds);
+	printf("ì¶œì‹œì¼: %d. %d. %d\n", vs.release.year, vs.release.month, vs.release.day);
 
 	return 0;
 }
