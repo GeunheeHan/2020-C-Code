@@ -1,31 +1,26 @@
-// file: structstudent.c
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <string.h>
 
 int main(void)
 {
-	//ÇĞ»ıÀ» À§ÇÑ ±¸Á¶Ã¼ 
 	struct student
 	{
-		int snum;		//ÇĞ¹ø
-		char *dept;		//ÇĞ°ú ÀÌ¸§
-		char name[12];	//ÇĞ»ı ÀÌ¸§
+		int snum;
+		char *dept;
+		char name[12];
 	};
-	struct student hong = { 201800001, "ÄÄÇ»ÅÍÁ¤º¸°øÇĞ°ú", "È«±æµ¿" };
+	struct student hong = { 201800001, "ì»´í“¨í„°ì •ë³´ê³µí•™ê³¼", "í™ê¸¸ë™" };
 	struct student na = { 201800002 };
 	struct student bae = { 201800003 };
 	
-	//ÇĞ»ıÀÌ¸§ ÀÔ·Â
 	scanf("%s", na.name);
-	//na.name = "³ªÇÑ±¹"; //¿À·ù
-	//scanf("%s", na.dept); //¿À·ù
 
-	na.dept = "ÄÄÇ»ÅÍÁ¤º¸°øÇĞ°ú";
-	bae.dept = "±â°è°øÇĞ°ú";
-	memcpy(bae.name, "¹è»ó¹®", 7);
-	strcpy(bae.name, "¹è»ó¹®");
-	strcpy_s(bae.name, 7, "¹è»ó¹®");
+	na.dept = "ì»´í“¨í„°ì •ë³´ê³µí•™ê³¼";
+	bae.dept = "ê¸°ê³„ê³µí•™ê³¼";
+	memcpy(bae.name, "ë°°ìƒë¬¸", 7);
+	strcpy(bae.name, "ë°°ìƒë¬¸");
+	strcpy_s(bae.name, 7, "ë°°ìƒë¬¸");
 
 	printf("[%d, %s, %s]\n", hong.snum, hong.dept, hong.name);
 	printf("[%d, %s, %s]\n", na.snum, na.dept, na.name);
@@ -34,10 +29,10 @@ int main(void)
 	struct student one;
 	one = bae;
 	if (one.snum == bae.snum)
-		printf("ÇĞ¹øÀÌ %d·Î µ¿ÀÏÇÕ´Ï´Ù.\n", one.snum);
-	//if ( one == bae ) //¿À·ù
+		printf("í•™ë²ˆì´ %dë¡œ ë™ì¼í•©ë‹ˆë‹¤.\n", one.snum);
+	//if ( one == bae ) //ì˜¤ë¥˜
 	if (one.snum == bae.snum && !strcmp(one.name, bae.name) && !strcmp(one.dept, bae.dept))
-		printf("³»¿ëÀÌ °°Àº ±¸Á¶Ã¼ÀÔ´Ï´Ù.\n");
+		printf("ë‚´ìš©ì´ ê°™ì€ êµ¬ì¡°ì²´ì…ë‹ˆë‹¤.\n");
 
 	return 0;
 }
